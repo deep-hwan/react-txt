@@ -1,5 +1,5 @@
 {
-  "name": "react-txt",
+  "name": "react-typogrphy-txt",
   "version": "0.0.1",
   "private": false,
   "files": [
@@ -78,7 +78,7 @@
     "typescript",
     "react",
     "layout",
-    "flexbox",
+    "react-component",
     "react-ui"
   ],
   "author": "deep",

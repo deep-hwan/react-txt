@@ -1,6 +1,6 @@
 # <div align="left">
 
-<h1>react-txt</h1>
+<h1>react-typogrphy-txt</h1>
 
 <p>
 txt component widget in typography in react.js
@@ -10,17 +10,17 @@ txt component widget in typography in react.js
 
 [![GitHub](https://img.shields.io/github/license/beforesemicolon/flatlist-react)](https://github.com/deep-hwan/react-image-cached-resizer/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/v/flatlist-react)](https://github.com/deep-hwan/react-image-cached-resizer)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/beforesemicolon/flatlist-react)](https://github.com/deep-hwan/react-txt)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/beforesemicolon/flatlist-react)](https://github.com/deep-hwan/react-typogrphy-txt)
 
-# [react-txt](https://github.com/deep-hwan/react-txt)
+# [react-typogrphy-txt](https://github.com/deep-hwan/react-typogrphy-txt)
 
 </div>
 
 ## Install
 
-    npm install react-txt
+    npm install react-typogrphy-txt
 
-    yarn add react-txt
+    yarn add react-typogrphy-txt
 
 ---
 

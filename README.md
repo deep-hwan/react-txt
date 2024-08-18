@@ -12,7 +12,7 @@ txt component widget in typography in react.js
 [![npm](https://img.shields.io/npm/v/flatlist-react)](https://github.com/deep-hwan/react-image-cached-resizer)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/beforesemicolon/flatlist-react)](https://github.com/deep-hwan/react-txt)
 
-# [react-layout-flexbox](https://github.com/deep-hwan/react-txt)
+# [react-txt](https://github.com/deep-hwan/react-txt)
 
 </div>
 
@@ -26,7 +26,7 @@ txt component widget in typography in react.js
 
 ## Type
 
-- Txt : Typograpy as
+- Txt : Typogrphy as
 
   - h1
   - h2
@@ -40,7 +40,7 @@ txt component widget in typography in react.js
   - p (default)
   - div
 
-- TxtSpan : Span Typograpy
+- TxtSpan : Span Typogrphy
 
 - Type
 

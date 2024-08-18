@@ -51,8 +51,6 @@ export default function TxtSpan(props: Types & { [key: string]: any }) {
   const globel_theme = {
     ...(txt_theme as any),
     ...mq_styles,
-    marginBlockStart: 0,
-    marginBlockEnd: 0,
     "&:hover": TxtTheme({ ...restProps.hover }),
     "&:active": TxtTheme({ ...restProps.active }),
     "&:disabled": TxtTheme({ ...restProps.disabled }),

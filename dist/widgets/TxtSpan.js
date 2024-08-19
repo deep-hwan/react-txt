@@ -48,7 +48,7 @@ function TxtSpan(props) {
     };
     var txt_theme = (0, view_1.TxtTheme)(__assign(__assign(__assign({}, restProps), { size: typeof size === "string" ? size : (size !== null && size !== void 0 ? size : 15) / 16 + "rem", weight: TYPOGRAPH_WEIGHT[weight !== null && weight !== void 0 ? weight : "normal"].fontWeight, color: restProps.color, txtAlign: (_d = restProps.txtAlign) !== null && _d !== void 0 ? _d : "start", whiteSpace: ((_e = props === null || props === void 0 ? void 0 : props.ellipsis) === null || _e === void 0 ? void 0 : _e.ellipsis)
             ? "normal"
-            : (_f = props.whiteSpace) !== null && _f !== void 0 ? _f : "pre-line", userSelect: props.userSelect ? props.userSelect : onClick && "none", cursor: props.cursor ? props.cursor : onClick && "pointer" }), (((_g = restProps.ellipsis) === null || _g === void 0 ? void 0 : _g.ellipsis) && txt_ellipsis_extend)));
+            : (_f = props.whiteSpace) !== null && _f !== void 0 ? _f : "nowrap", userSelect: props.userSelect ? props.userSelect : onClick && "none", cursor: props.cursor ? props.cursor : onClick && "pointer" }), (((_g = restProps.ellipsis) === null || _g === void 0 ? void 0 : _g.ellipsis) && txt_ellipsis_extend)));
     var globel_theme = __assign(__assign(__assign({}, txt_theme), mq_styles), { "&:hover": (0, view_1.TxtTheme)(__assign({}, restProps.hover)), "&:active": (0, view_1.TxtTheme)(__assign({}, restProps.active)), "&:disabled": (0, view_1.TxtTheme)(__assign({}, restProps.disabled)) });
     //
     //

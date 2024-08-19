@@ -42,7 +42,7 @@ export default function TxtSpan(props: Types & { [key: string]: any }) {
     txtAlign: restProps.txtAlign ?? "start",
     whiteSpace: props?.ellipsis?.ellipsis
       ? "normal"
-      : props.whiteSpace ?? "pre-line",
+      : props.whiteSpace ?? "nowrap",
     userSelect: props.userSelect ? props.userSelect : onClick && "none",
     cursor: props.cursor ? props.cursor : onClick && "pointer",
     ...(restProps.ellipsis?.ellipsis && txt_ellipsis_extend),

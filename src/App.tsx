@@ -27,8 +27,14 @@ export default function App() {
 
       <Txt as="i">Typogrphy I</Txt>
 
-      <Txt weight="medium" size={15} color="red">
-        Typogrphy
+      <Txt
+        weight="medium"
+        size={15}
+        maxWidth={150}
+        ellipsis={{ ellipsis: true, line: 1 }}
+        color="red"
+      >
+        Typogrphy Typogrphy react-typogrphy-txt react-typogrphy-txt
       </Txt>
     </>
   );

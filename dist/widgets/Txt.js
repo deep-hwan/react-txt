@@ -90,7 +90,6 @@ function Txt(props) {
     };
     var txt_ellipsis_extend = {
         maxWidth: (_b = (_a = restProps === null || restProps === void 0 ? void 0 : restProps.ellipsis) === null || _a === void 0 ? void 0 : _a.width) !== null && _b !== void 0 ? _b : restProps.maxWidth,
-        display: "-webkit-box",
         overflow: "hidden",
         textOverflow: "ellipsis",
         WebkitBoxOrient: "vertical",

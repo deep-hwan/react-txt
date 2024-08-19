@@ -72,7 +72,6 @@ export default function Txt(props: Types & { [key: string]: any }) {
 
   const txt_ellipsis_extend = {
     maxWidth: restProps?.ellipsis?.width ?? restProps.maxWidth,
-    display: "-webkit-box",
     overflow: "hidden",
     textOverflow: "ellipsis",
     WebkitBoxOrient: "vertical",

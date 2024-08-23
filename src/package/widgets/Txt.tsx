@@ -131,6 +131,7 @@ export default function Txt(props: Types & { [key: string]: any }) {
       {as === "h3" && (
         <h3
           className="h3_txt"
+          onClick={onClick}
           css={{ ...(globel_theme as any) }}
           {...elementProps}
         >
@@ -141,6 +142,7 @@ export default function Txt(props: Types & { [key: string]: any }) {
       {as === "h4" && (
         <h4
           className="h4_txt"
+          onClick={onClick}
           css={{ ...(globel_theme as any) }}
           {...elementProps}
         >
@@ -151,6 +153,7 @@ export default function Txt(props: Types & { [key: string]: any }) {
       {as === "h5" && (
         <h5
           className="h5_txt"
+          onClick={onClick}
           css={{ ...(globel_theme as any) }}
           {...elementProps}
         >
@@ -161,6 +164,7 @@ export default function Txt(props: Types & { [key: string]: any }) {
       {as === "h6" && (
         <h6
           className="h6_txt"
+          onClick={onClick}
           css={{ ...(globel_theme as any) }}
           {...elementProps}
         >
@@ -171,6 +175,7 @@ export default function Txt(props: Types & { [key: string]: any }) {
       {as === "b" && (
         <b
           className="b_txt"
+          onClick={onClick}
           css={{ ...(globel_theme as any) }}
           {...elementProps}
         >
@@ -181,6 +186,7 @@ export default function Txt(props: Types & { [key: string]: any }) {
       {as === "strong" && (
         <strong
           className="strong_txt"
+          onClick={onClick}
           css={{ ...(globel_theme as any) }}
           {...elementProps}
         >
@@ -191,6 +197,7 @@ export default function Txt(props: Types & { [key: string]: any }) {
       {as === "i" && (
         <i
           className="i_txt"
+          onClick={onClick}
           css={{ ...(globel_theme as any) }}
           {...elementProps}
         >
@@ -201,6 +208,7 @@ export default function Txt(props: Types & { [key: string]: any }) {
       {as === "p" && (
         <p
           className="p_txt"
+          onClick={onClick}
           css={{ ...(globel_theme as any) }}
           {...elementProps}
         >
@@ -211,6 +219,7 @@ export default function Txt(props: Types & { [key: string]: any }) {
       {as === "div" && (
         <p
           className="p_txt"
+          onClick={onClick}
           css={{ ...(globel_theme as any) }}
           {...elementProps}
         >

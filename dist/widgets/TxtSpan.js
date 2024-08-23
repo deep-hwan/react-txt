@@ -52,6 +52,6 @@ function TxtSpan(props) {
     var globel_theme = __assign(__assign(__assign({}, txt_theme), mq_styles), { "&:hover": (0, view_1.TxtTheme)(__assign({}, restProps.hover)), "&:active": (0, view_1.TxtTheme)(__assign({}, restProps.active)), "&:disabled": (0, view_1.TxtTheme)(__assign({}, restProps.disabled)) });
     //
     //
-    return ((0, jsx_runtime_1.jsx)("span", __assign({ className: "span_txt", css: __assign({}, globel_theme) }, elementProps, { children: props.children })));
+    return ((0, jsx_runtime_1.jsx)("span", __assign({ className: "span_txt", css: __assign({}, globel_theme), onClick: onClick }, elementProps, { children: props.children })));
 }
 exports.default = TxtSpan;

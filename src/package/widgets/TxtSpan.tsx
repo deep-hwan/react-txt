@@ -63,6 +63,7 @@ export default function TxtSpan(props: Types & { [key: string]: any }) {
     <span
       className="span_txt"
       css={{ ...(globel_theme as any) }}
+      onClick={onClick}
       {...elementProps}
     >
       {props.children}

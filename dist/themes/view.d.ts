@@ -18,6 +18,7 @@ export declare const TxtTheme: (props: {
     gap?: number | undefined;
     crossGap?: number | undefined;
     order?: number | undefined;
+    scale?: number | undefined;
 } & {
     positionType?: "static" | "relative" | "fixed" | "absolute" | "sticky" | undefined;
     position?: {
@@ -95,6 +96,7 @@ export declare const TxtTheme: (props: {
         gap?: number | undefined;
         crossGap?: number | undefined;
         order?: number | undefined;
+        scale?: number | undefined;
     } & {
         positionType?: "static" | "relative" | "fixed" | "absolute" | "sticky" | undefined;
         position?: {
@@ -172,6 +174,7 @@ export declare const TxtTheme: (props: {
         gap?: number | undefined;
         crossGap?: number | undefined;
         order?: number | undefined;
+        scale?: number | undefined;
     } & {
         positionType?: "static" | "relative" | "fixed" | "absolute" | "sticky" | undefined;
         position?: {
@@ -249,6 +252,7 @@ export declare const TxtTheme: (props: {
         gap?: number | undefined;
         crossGap?: number | undefined;
         order?: number | undefined;
+        scale?: number | undefined;
     } & {
         positionType?: "static" | "relative" | "fixed" | "absolute" | "sticky" | undefined;
         position?: {
@@ -326,6 +330,7 @@ export declare const TxtTheme: (props: {
         gap?: number | undefined;
         crossGap?: number | undefined;
         order?: number | undefined;
+        scale?: number | undefined;
     } & {
         positionType?: "static" | "relative" | "fixed" | "absolute" | "sticky" | undefined;
         position?: {

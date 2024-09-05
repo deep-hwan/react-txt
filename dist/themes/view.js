@@ -51,6 +51,7 @@ var TxtTheme = function (props) {
         opacity: props.opacity,
         rotate: typeof props.rotate === "number" ? props.rotate + "deg" : props.rotate,
         userSelect: props.userSelect,
+        scale: props.scale,
         //
         paddingTop: ((_h = props === null || props === void 0 ? void 0 : props.padding) === null || _h === void 0 ? void 0 : _h.all) || ((_j = props === null || props === void 0 ? void 0 : props.padding) === null || _j === void 0 ? void 0 : _j.vertical) || ((_k = props === null || props === void 0 ? void 0 : props.padding) === null || _k === void 0 ? void 0 : _k.top),
         paddingBottom: ((_l = props === null || props === void 0 ? void 0 : props.padding) === null || _l === void 0 ? void 0 : _l.all) || ((_m = props === null || props === void 0 ? void 0 : props.padding) === null || _m === void 0 ? void 0 : _m.vertical) || ((_o = props === null || props === void 0 ? void 0 : props.padding) === null || _o === void 0 ? void 0 : _o.bottom),

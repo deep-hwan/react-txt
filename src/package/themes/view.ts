@@ -63,6 +63,7 @@ export const TxtTheme = (props: TxtType & { direction?: "row" | "column" }) => {
     rotate:
       typeof props.rotate === "number" ? props.rotate + "deg" : props.rotate,
     userSelect: props.userSelect,
+    scale: props.scale,
 
     //
     paddingTop:

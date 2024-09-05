@@ -28,7 +28,7 @@ export default function Txt(props: Types & { [key: string]: any }) {
   const { as = "p", size, weight, onClick, ...restProps } = props;
 
   const { elementProps } = extandedProps(restProps);
-  const mq_styles = extandedMediaQuery({ mediaQuery: props.mediaQuery });
+  const mq_styles = extandedMediaQuery({ _mediaQuery: props._mediaQuery });
 
   const TYPOGRAPH_WEIGHT = {
     lighter: { fontWeight: "300" },
@@ -96,136 +96,23 @@ export default function Txt(props: Types & { [key: string]: any }) {
     ...(txt_theme as any),
     ...mq_styles,
 
-    "&:hover": TxtTheme({ ...restProps.hover }),
-    "&:active": TxtTheme({ ...restProps.active }),
-    "&:disabled": TxtTheme({ ...restProps.disabled }),
+    "&:hover": TxtTheme({ ...restProps._hover }),
+    "&:active": TxtTheme({ ...restProps._active }),
+    "&:disabled": TxtTheme({ ...restProps._disabled }),
   };
 
-  //
-  //
+  const Element = as || "p";
 
   return (
     <>
-      {as === "h1" && (
-        <h1
-          className="h1_txt"
-          css={{ ...(globel_theme as any) }}
-          onClick={onClick}
-          {...elementProps}
-        >
-          {props.children}
-        </h1>
-      )}
-
-      {as === "h2" && (
-        <h2
-          className="h2_txt"
-          css={{ ...(globel_theme as any) }}
-          onClick={onClick}
-          {...elementProps}
-        >
-          {props.children}
-        </h2>
-      )}
-
-      {as === "h3" && (
-        <h3
-          className="h3_txt"
-          onClick={onClick}
-          css={{ ...(globel_theme as any) }}
-          {...elementProps}
-        >
-          {props.children}
-        </h3>
-      )}
-
-      {as === "h4" && (
-        <h4
-          className="h4_txt"
-          onClick={onClick}
-          css={{ ...(globel_theme as any) }}
-          {...elementProps}
-        >
-          {props.children}
-        </h4>
-      )}
-
-      {as === "h5" && (
-        <h5
-          className="h5_txt"
-          onClick={onClick}
-          css={{ ...(globel_theme as any) }}
-          {...elementProps}
-        >
-          {props.children}
-        </h5>
-      )}
-
-      {as === "h6" && (
-        <h6
-          className="h6_txt"
-          onClick={onClick}
-          css={{ ...(globel_theme as any) }}
-          {...elementProps}
-        >
-          {props.children}
-        </h6>
-      )}
-
-      {as === "b" && (
-        <b
-          className="b_txt"
-          onClick={onClick}
-          css={{ ...(globel_theme as any) }}
-          {...elementProps}
-        >
-          {props.children}
-        </b>
-      )}
-
-      {as === "strong" && (
-        <strong
-          className="strong_txt"
-          onClick={onClick}
-          css={{ ...(globel_theme as any) }}
-          {...elementProps}
-        >
-          {props.children}
-        </strong>
-      )}
-
-      {as === "i" && (
-        <i
-          className="i_txt"
-          onClick={onClick}
-          css={{ ...(globel_theme as any) }}
-          {...elementProps}
-        >
-          {props.children}
-        </i>
-      )}
-
-      {as === "p" && (
-        <p
-          className="p_txt"
-          onClick={onClick}
-          css={{ ...(globel_theme as any) }}
-          {...elementProps}
-        >
-          {props.children}
-        </p>
-      )}
-
-      {as === "div" && (
-        <p
-          className="p_txt"
-          onClick={onClick}
-          css={{ ...(globel_theme as any) }}
-          {...elementProps}
-        >
-          {props.children}
-        </p>
-      )}
+      <Element
+        className={as + "_txt"}
+        css={{ ...(globel_theme as any) }}
+        onClick={onClick}
+        {...elementProps}
+      >
+        {props.children}
+      </Element>
     </>
   );
 }

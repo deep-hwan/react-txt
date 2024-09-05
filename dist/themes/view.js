@@ -49,6 +49,7 @@ var TxtTheme = function (props) {
         transition: (props === null || props === void 0 ? void 0 : props.transitionTime) && "".concat(props === null || props === void 0 ? void 0 : props.transitionTime, "s ease-in-out"),
         cursor: props === null || props === void 0 ? void 0 : props.cursor,
         opacity: props.opacity,
+        rotate: typeof props.rotate === "number" ? props.rotate + "deg" : props.rotate,
         userSelect: props.userSelect,
         //
         paddingTop: ((_h = props === null || props === void 0 ? void 0 : props.padding) === null || _h === void 0 ? void 0 : _h.all) || ((_j = props === null || props === void 0 ? void 0 : props.padding) === null || _j === void 0 ? void 0 : _j.vertical) || ((_k = props === null || props === void 0 ? void 0 : props.padding) === null || _k === void 0 ? void 0 : _k.top),

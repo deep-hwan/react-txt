@@ -16,7 +16,7 @@ export default function TxtSpan(props: Types & { [key: string]: any }) {
   const { size, weight, onClick, ...restProps } = props;
 
   const { elementProps } = extandedProps(restProps);
-  const mq_styles = extandedMediaQuery({ mediaQuery: props.mediaQuery });
+  const mq_styles = extandedMediaQuery({ _mediaQuery: props._mediaQuery });
 
   const TYPOGRAPH_WEIGHT = {
     lighter: { fontWeight: "300" },
@@ -51,9 +51,9 @@ export default function TxtSpan(props: Types & { [key: string]: any }) {
   const globel_theme = {
     ...(txt_theme as any),
     ...mq_styles,
-    "&:hover": TxtTheme({ ...restProps.hover }),
-    "&:active": TxtTheme({ ...restProps.active }),
-    "&:disabled": TxtTheme({ ...restProps.disabled }),
+    "&:hover": TxtTheme({ ...restProps._hover }),
+    "&:active": TxtTheme({ ...restProps._active }),
+    "&:disabled": TxtTheme({ ...restProps._disabled }),
   };
 
   //

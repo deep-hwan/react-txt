@@ -62,6 +62,7 @@ type LayerType = {
   cursor?: "default" | "grab" | "pointer" | "zoom";
   opacity?: number;
   userSelect?: "none" | "auto" | "text" | "contain" | "all";
+  rotate?: string | number;
 };
 
 //
@@ -120,16 +121,16 @@ type TxtTypes = FlexType &
 //
 //
 type EffectType = {
-  hover?: TxtTypes;
-  active?: TxtTypes;
-  disabled?: TxtTypes;
-  focus?: TxtTypes;
+  _hover?: TxtTypes;
+  _active?: TxtTypes;
+  _disabled?: TxtTypes;
+  _focus?: TxtTypes;
 };
 
 //
 //
 export type MediaQueryType = {
-  mediaQuery?: {
+  _mediaQuery?: {
     s1440?: TxtTypes & EffectType;
     s1280?: TxtTypes & EffectType;
     s1080?: TxtTypes & EffectType;

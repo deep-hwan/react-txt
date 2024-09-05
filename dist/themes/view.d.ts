@@ -57,6 +57,7 @@ export declare const TxtTheme: (props: {
     cursor?: "default" | "grab" | "pointer" | "zoom" | undefined;
     opacity?: number | undefined;
     userSelect?: "auto" | "none" | "text" | "contain" | "all" | undefined;
+    rotate?: string | number | undefined;
 } & {
     padding?: {
         all?: string | number | undefined;
@@ -77,7 +78,7 @@ export declare const TxtTheme: (props: {
         right?: string | number | undefined;
     } | undefined;
 } & {
-    hover?: ({
+    _hover?: ({
         display?: "none" | "flex" | undefined;
         direction?: "row" | "column" | undefined;
         flex?: string | number | undefined;
@@ -133,6 +134,7 @@ export declare const TxtTheme: (props: {
         cursor?: "default" | "grab" | "pointer" | "zoom" | undefined;
         opacity?: number | undefined;
         userSelect?: "auto" | "none" | "text" | "contain" | "all" | undefined;
+        rotate?: string | number | undefined;
     } & {
         padding?: {
             all?: string | number | undefined;
@@ -153,7 +155,7 @@ export declare const TxtTheme: (props: {
             right?: string | number | undefined;
         } | undefined;
     }) | undefined;
-    active?: ({
+    _active?: ({
         display?: "none" | "flex" | undefined;
         direction?: "row" | "column" | undefined;
         flex?: string | number | undefined;
@@ -209,6 +211,7 @@ export declare const TxtTheme: (props: {
         cursor?: "default" | "grab" | "pointer" | "zoom" | undefined;
         opacity?: number | undefined;
         userSelect?: "auto" | "none" | "text" | "contain" | "all" | undefined;
+        rotate?: string | number | undefined;
     } & {
         padding?: {
             all?: string | number | undefined;
@@ -229,7 +232,7 @@ export declare const TxtTheme: (props: {
             right?: string | number | undefined;
         } | undefined;
     }) | undefined;
-    disabled?: ({
+    _disabled?: ({
         display?: "none" | "flex" | undefined;
         direction?: "row" | "column" | undefined;
         flex?: string | number | undefined;
@@ -285,6 +288,7 @@ export declare const TxtTheme: (props: {
         cursor?: "default" | "grab" | "pointer" | "zoom" | undefined;
         opacity?: number | undefined;
         userSelect?: "auto" | "none" | "text" | "contain" | "all" | undefined;
+        rotate?: string | number | undefined;
     } & {
         padding?: {
             all?: string | number | undefined;
@@ -305,7 +309,7 @@ export declare const TxtTheme: (props: {
             right?: string | number | undefined;
         } | undefined;
     }) | undefined;
-    focus?: ({
+    _focus?: ({
         display?: "none" | "flex" | undefined;
         direction?: "row" | "column" | undefined;
         flex?: string | number | undefined;
@@ -361,6 +365,7 @@ export declare const TxtTheme: (props: {
         cursor?: "default" | "grab" | "pointer" | "zoom" | undefined;
         opacity?: number | undefined;
         userSelect?: "auto" | "none" | "text" | "contain" | "all" | undefined;
+        rotate?: string | number | undefined;
     } & {
         padding?: {
             all?: string | number | undefined;

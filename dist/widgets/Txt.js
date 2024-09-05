@@ -31,7 +31,7 @@ function Txt(props) {
     var _a, _b, _c, _d, _e, _f, _g, _h;
     var _j = props.as, as = _j === void 0 ? "p" : _j, size = props.size, weight = props.weight, onClick = props.onClick, restProps = __rest(props, ["as", "size", "weight", "onClick"]);
     var elementProps = (0, extandedProps_1.extandedProps)(restProps).elementProps;
-    var mq_styles = (0, mediaQuery_1.extandedMediaQuery)({ mediaQuery: props.mediaQuery });
+    var mq_styles = (0, mediaQuery_1.extandedMediaQuery)({ _mediaQuery: props._mediaQuery });
     var TYPOGRAPH_WEIGHT = {
         lighter: { fontWeight: "300" },
         normal: { fontWeight: 400 },
@@ -98,9 +98,8 @@ function Txt(props) {
     var txt_theme = (0, view_1.TxtTheme)(__assign(__assign(__assign({}, restProps), { size: txt_size_extend(), weight: txt_weight(), color: (_d = restProps.color) !== null && _d !== void 0 ? _d : "#4e4e51", txtAlign: (_e = restProps.txtAlign) !== null && _e !== void 0 ? _e : "start", whiteSpace: ((_f = props === null || props === void 0 ? void 0 : props.ellipsis) === null || _f === void 0 ? void 0 : _f.ellipsis)
             ? "normal"
             : (_g = props.whiteSpace) !== null && _g !== void 0 ? _g : "pre-line", userSelect: props.userSelect ? props.userSelect : onClick && "none", cursor: props.cursor ? props.cursor : onClick && "pointer" }), (((_h = restProps.ellipsis) === null || _h === void 0 ? void 0 : _h.ellipsis) && txt_ellipsis_extend)));
-    var globel_theme = __assign(__assign(__assign({}, txt_theme), mq_styles), { "&:hover": (0, view_1.TxtTheme)(__assign({}, restProps.hover)), "&:active": (0, view_1.TxtTheme)(__assign({}, restProps.active)), "&:disabled": (0, view_1.TxtTheme)(__assign({}, restProps.disabled)) });
-    //
-    //
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [as === "h1" && ((0, jsx_runtime_1.jsx)("h1", __assign({ className: "h1_txt", css: __assign({}, globel_theme), onClick: onClick }, elementProps, { children: props.children }))), as === "h2" && ((0, jsx_runtime_1.jsx)("h2", __assign({ className: "h2_txt", css: __assign({}, globel_theme), onClick: onClick }, elementProps, { children: props.children }))), as === "h3" && ((0, jsx_runtime_1.jsx)("h3", __assign({ className: "h3_txt", onClick: onClick, css: __assign({}, globel_theme) }, elementProps, { children: props.children }))), as === "h4" && ((0, jsx_runtime_1.jsx)("h4", __assign({ className: "h4_txt", onClick: onClick, css: __assign({}, globel_theme) }, elementProps, { children: props.children }))), as === "h5" && ((0, jsx_runtime_1.jsx)("h5", __assign({ className: "h5_txt", onClick: onClick, css: __assign({}, globel_theme) }, elementProps, { children: props.children }))), as === "h6" && ((0, jsx_runtime_1.jsx)("h6", __assign({ className: "h6_txt", onClick: onClick, css: __assign({}, globel_theme) }, elementProps, { children: props.children }))), as === "b" && ((0, jsx_runtime_1.jsx)("b", __assign({ className: "b_txt", onClick: onClick, css: __assign({}, globel_theme) }, elementProps, { children: props.children }))), as === "strong" && ((0, jsx_runtime_1.jsx)("strong", __assign({ className: "strong_txt", onClick: onClick, css: __assign({}, globel_theme) }, elementProps, { children: props.children }))), as === "i" && ((0, jsx_runtime_1.jsx)("i", __assign({ className: "i_txt", onClick: onClick, css: __assign({}, globel_theme) }, elementProps, { children: props.children }))), as === "p" && ((0, jsx_runtime_1.jsx)("p", __assign({ className: "p_txt", onClick: onClick, css: __assign({}, globel_theme) }, elementProps, { children: props.children }))), as === "div" && ((0, jsx_runtime_1.jsx)("p", __assign({ className: "p_txt", onClick: onClick, css: __assign({}, globel_theme) }, elementProps, { children: props.children })))] }));
+    var globel_theme = __assign(__assign(__assign({}, txt_theme), mq_styles), { "&:hover": (0, view_1.TxtTheme)(__assign({}, restProps._hover)), "&:active": (0, view_1.TxtTheme)(__assign({}, restProps._active)), "&:disabled": (0, view_1.TxtTheme)(__assign({}, restProps._disabled)) });
+    var Element = as || "p";
+    return ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: (0, jsx_runtime_1.jsx)(Element, __assign({ className: as + "_txt", css: __assign({}, globel_theme), onClick: onClick }, elementProps, { children: props.children })) }));
 }
 exports.default = Txt;

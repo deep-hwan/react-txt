@@ -4,39 +4,39 @@ import { MediaQueryType, TxtType } from "../types/txt";
 const TxtThemes = (props: TxtType & { direction?: "column" | "row" }) =>
   TxtTheme(props);
 
-export const extandedMediaQuery = ({ mediaQuery }: MediaQueryType) => {
+export const extandedMediaQuery = ({ _mediaQuery }: MediaQueryType) => {
   const mq_theme = () => {
-    if (mediaQuery) {
+    if (_mediaQuery) {
       return {
         s1440: {
-          ...(TxtThemes(mediaQuery.s1440 || {}) as any),
-          "&:hover": TxtThemes(mediaQuery.s1440?.hover || {}) as any,
-          "&:active": TxtThemes(mediaQuery.s1440?.active || {}) as any,
+          ...(TxtThemes(_mediaQuery.s1440 || {}) as any),
+          "&:hover": TxtThemes(_mediaQuery.s1440?._hover || {}) as any,
+          "&:active": TxtThemes(_mediaQuery.s1440?._active || {}) as any,
         },
         s1280: {
-          ...(TxtThemes(mediaQuery.s1280 || {}) as any),
-          "&:hover": TxtThemes(mediaQuery.s1280?.hover || {}) as any,
-          "&:active": TxtThemes(mediaQuery.s1280?.active || {}) as any,
+          ...(TxtThemes(_mediaQuery.s1280 || {}) as any),
+          "&:hover": TxtThemes(_mediaQuery.s1280?._hover || {}) as any,
+          "&:active": TxtThemes(_mediaQuery.s1280?._active || {}) as any,
         },
         s1080: {
-          ...(TxtThemes(mediaQuery.s1080 || {}) as any),
-          "&:hover": TxtThemes(mediaQuery.s1080?.hover || {}) as any,
-          "&:active": TxtThemes(mediaQuery.s1080?.active || {}) as any,
+          ...(TxtThemes(_mediaQuery.s1080 || {}) as any),
+          "&:hover": TxtThemes(_mediaQuery.s1080?._hover || {}) as any,
+          "&:active": TxtThemes(_mediaQuery.s1080?._active || {}) as any,
         },
         s768: {
-          ...(TxtThemes(mediaQuery.s768 || {}) as any),
-          "&:hover": TxtThemes(mediaQuery.s768?.hover || {}) as any,
-          "&:active": TxtThemes(mediaQuery.s768?.active || {}) as any,
+          ...(TxtThemes(_mediaQuery.s768 || {}) as any),
+          "&:hover": TxtThemes(_mediaQuery.s768?._hover || {}) as any,
+          "&:active": TxtThemes(_mediaQuery.s768?._active || {}) as any,
         },
         s600: {
-          ...(TxtThemes(mediaQuery.s600 || {}) as any),
-          "&:hover": TxtThemes(mediaQuery.s600?.hover || {}) as any,
-          "&:active": TxtThemes(mediaQuery.s600?.active || {}) as any,
+          ...(TxtThemes(_mediaQuery.s600 || {}) as any),
+          "&:hover": TxtThemes(_mediaQuery.s600?._hover || {}) as any,
+          "&:active": TxtThemes(_mediaQuery.s600?._active || {}) as any,
         },
         s428: {
-          ...(TxtThemes(mediaQuery.s428 || {}) as any),
-          "&:hover": TxtThemes(mediaQuery.s428?.hover || {}) as any,
-          "&:active": TxtThemes(mediaQuery.s428?.active || {}) as any,
+          ...(TxtThemes(_mediaQuery.s428 || {}) as any),
+          "&:hover": TxtThemes(_mediaQuery.s428?._hover || {}) as any,
+          "&:active": TxtThemes(_mediaQuery.s428?._active || {}) as any,
         },
       };
     }

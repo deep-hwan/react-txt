@@ -3,7 +3,7 @@ import { Txt, TxtSpan } from "./package/index";
 
 export default function App() {
   return (
-    <>
+    <div>
       <Txt as="h1">Typogrphy H1</Txt>
 
       <Txt as="h2">Typogrphy H2</Txt>
@@ -12,7 +12,9 @@ export default function App() {
 
       <Txt as="h4">Typogrphy H4</Txt>
 
-      <Txt as="h5">Typogrphy H5</Txt>
+      <Txt as="h5" rotate={30}>
+        Typogrphy H5
+      </Txt>
 
       <Txt as="h6">Typogrphy H6</Txt>
 
@@ -28,6 +30,7 @@ export default function App() {
       <Txt as="i">Typogrphy I</Txt>
 
       <Txt
+        _mediaQuery={{ s428: { size: 24 } }}
         weight="medium"
         size={15}
         maxWidth={150}
@@ -36,6 +39,6 @@ export default function App() {
       >
         Typogrphy Typogrphy react-typogrphy-txt react-typogrphy-txt
       </Txt>
-    </>
+    </div>
   );
 }

@@ -60,6 +60,8 @@ export const TxtTheme = (props: TxtType & { direction?: "row" | "column" }) => {
       props?.transitionTime && `${props?.transitionTime}s ease-in-out`,
     cursor: props?.cursor,
     opacity: props.opacity,
+    rotate:
+      typeof props.rotate === "number" ? props.rotate + "deg" : props.rotate,
     userSelect: props.userSelect,
 
     //

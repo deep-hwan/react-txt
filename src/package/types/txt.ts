@@ -52,7 +52,6 @@ type FlexType = {
   gap?: number;
   crossGap?: number;
   order?: number;
-  scale?: number;
 };
 
 //
@@ -64,6 +63,7 @@ type LayerType = {
   opacity?: number;
   userSelect?: "none" | "auto" | "text" | "contain" | "all";
   rotate?: string | number;
+  scale?: number;
 };
 
 //
